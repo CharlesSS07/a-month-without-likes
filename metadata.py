@@ -1,6 +1,6 @@
 
 
-project_name = 'Touch Grass Movement'
+project_name = 'The Touch Grass Movement'
 
 founders = {'charles shelby': {'email': 'charles.s.strauss@utah.edu', 'phone':'+1 505 309 5360'}}
 
