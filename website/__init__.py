@@ -6,7 +6,7 @@ import glob
 
 from pathlib import Path
 
-def generate_webpages(airium, page_list, output_dir):
+def generate(airium, page_list, output_dir):
     
     for page in page_list:
         
@@ -14,7 +14,8 @@ def generate_webpages(airium, page_list, output_dir):
             spec = importlib.util.spec_from_file_location("pagemodule", page)
             foo = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(foo)
-            html = foo.html(airium)
+            html = foo.generate(airium)
+            # should check foo.page_path dosen't start with / or something accidenatl
         
             with open(Path(output_dir)/foo.page_path, 'w') as f:
                 f.write(html)
