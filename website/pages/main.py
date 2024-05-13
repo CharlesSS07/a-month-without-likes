@@ -1,16 +1,20 @@
 
 
 import metadata
-import templates
-
-page_path = 'index.html'
+import website.templates as templates
+import website.html as html
 
 def generate(airium):
     a = airium
     with templates.html(a):
         templates.head(a)
-        templates.topbar(a)
-        with a.h3(id="id23409231", klass='main_header'):
-            a("Hello World.")
-        templates.footer(a)
+        with a.body():
+            templates.topbar(a)
+            with html.centered(a, 500, 300):
+                with html.centered(a, 100, 'auto'):
+                    with a.h3():
+                        a(metadata.project_name)
+                a(metadata.sales_pitch)
+            templates.firebase(a)
+            templates.footer(a)
     return str(a)

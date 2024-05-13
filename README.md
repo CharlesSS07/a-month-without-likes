@@ -1,5 +1,6 @@
-# `$= dv.page('gen/metadata.md').project_name`
-`$= dv.page('gen/metadata.md').basic_idea`
+# `$= dv.page('public/metadata.md').project_name`
+### `$= dv.page('public/metadata.md').slogan`
+`$= dv.page('public/metadata.md').sales_pitch`
 ## Implications of results
 By recording and collecting the data of uses who are intentionally not on the apps, it may become possible to ascertain various new implications about the effects of various social media platforms.
 

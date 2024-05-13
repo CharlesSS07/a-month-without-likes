@@ -1,0 +1,19 @@
+{
+  "name": "a-month-without-likes",
+  "version": "1.0.0",
+  "description": "Online challenge intended to disrupt the internet. Sign up, tune in, and log out.",
+  "main": "bundle.js",
+  "scripts": {
+    "build:js": "rollup -c ./rollup.config.mjs"
+  },
+  "author": "charles shelby",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.5"
+  },
+  "dependencies": {
+    "firebase": "^10.7.1",
+    "firebaseui": "^6.1.0"
+  }
+}

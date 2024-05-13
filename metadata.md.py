@@ -3,13 +3,14 @@
 import metadata
 import yaml
 
-with open('gen/metadata.md', 'w') as md:
+with open('public/metadata.md', 'w') as md:
     md.write('---\n')
     yaml.dump(
         {
             'project_name': metadata.project_name,
             'git_hash_sha': metadata.git_hash_sha,
-            'basic_idea': metadata.basic_idea
+            'slogan':metadata.slogan,
+            'sales_pitch': metadata.sales_pitch
         },
         md
     )
