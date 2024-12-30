@@ -1,6 +1,6 @@
-# `$= dv.page('public/metadata.md').project_name`
-### `$= dv.page('public/metadata.md').slogan`
-`$= dv.page('public/metadata.md').sales_pitch`
+# A Month Without Likes
+Imagine a world where all digital social media ceased to exist; would the lonliness crisis begin to end?
+
 ## Implications of results
 By recording and collecting the data of uses who are intentionally not on the apps, it may become possible to ascertain various new implications about the effects of various social media platforms.
 
